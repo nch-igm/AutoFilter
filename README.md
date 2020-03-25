@@ -170,7 +170,7 @@ mod_paramdict={'0': {'modnum': 0,
 <br>
 <br>
 
-## Reading model output, setting thresholds
+## Reading model output, setting thresholds (autofilt_apply.py)
 AutoFilter outputs a __model performance file__ to the path traindir/allmod_summary.csv. Indels
 are sub-categorized by insertion/deletion and length. <br>
 
