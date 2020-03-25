@@ -269,7 +269,7 @@ of use would both suffer.
 
 <br>
 
-#### You say AutoFilter trains on all the features in a VCF. Won't some of these features just amount to meaningless noise that impairs accuracy?
+#### You say AutoFilter trains on all the features in a VCF. Won't some of these features just be meaningless noise that impairs accuracy?
 This is another problem that is largely obviated by the gradient-boosted tree architecture, which focuses on important features and ignores the 
 uninformative ones. In our experience, feature-pruning an xgboost model does not lead to significant gains in accuracy. Regardless,
 AutoFilter achieves solid performance even when all features are included.
