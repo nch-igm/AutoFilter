@@ -126,7 +126,7 @@ institutions to build their own accurate VCF filters with minimum fuss.<br><br>
 __FILES__<br>
 __*Truth VCF from Genome in a Bottle website:*__  A theoretically
 100%-accurate set of mutations from one of seven extensively-studied samples (the most
-common being NA12878.) You can download it from the Genome in a Bottle ftp site: 
+common being NA12878). You can download it from the Genome in a Bottle ftp site: 
 ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/ (If 
 the link doesn't work, try Internet Explorer.)<br>
 __*Query VCF for Genome in a Bottle Sample:*__ A set of variants called 
@@ -171,7 +171,7 @@ mod_paramdict={'0': {'modnum': 0,
 <br>
 
 ## Reading model output, setting thresholds (autofilt_apply.py)
-AutoFilter outputs a __model performance file__ to the path traindir/allmod_summary.csv. Indels
+AutoFilter outputs a __model performance file__ to the path traindir/allmod_summary.csv. INDELs
 are sub-categorized by insertion/deletion and length. <br>
 
 AutoFilter builds a separate model for each variant-type/zygosity combination. 
@@ -181,7 +181,7 @@ validated on a held-out set at calling thresholds of 0.1, 0.2, ..., 0.9. <br>
 
 The model performance file shows the number of TP, FP... at different threshholds. These
 thresholds are required inputs when applying the models, allowing the user
-to intelligently take control over the tradeoff of sensitivity/specificity.<br>
+to intelligently take control over the tradeoff between sensitivity/specificity.<br>
 
 | vartype | zyg | modid | thresh | n | TP | FP | FN | TN | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |  
@@ -223,7 +223,7 @@ Sure. A multi-sample variant will be flagged as PASS if it is passed in any samp
 
 #### Does AutoFilter work on all variants?
 No. Most importantly, AutoFilter labels all multi-allelic variants as PASS. AutoFilter 
-considers a variant to "multi-allelic" if it contains
+considers a variant to be "multi-allelic" if it contains
 more than one allele in the ALT field OR its genotype field "X/Y" includes an integer greater than one 
 (though the second condition should imply the first). Note that these criteria also apply to 
 multi-sample variants, even if the variant has only one alternate allele in any given sample.<br>
@@ -254,7 +254,7 @@ a consistent order.
 
 <br>
 
-#### When building custom models, do I have to include entries for all sixteen types (SNP het, SNP hom, I1_5_het, ..., MNP_hom)?
+#### When building custom models, do I have to include entries for all 16 types (SNP het, SNP hom, I1_5_het, ..., MNP_hom)?
 Nope!
 <br>
 
