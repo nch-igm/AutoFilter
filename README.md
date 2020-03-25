@@ -209,7 +209,7 @@ to intelligently take control over the tradeoff of sensitivity/specificity.<br>
 ## FAQ
 #### Incorrect removal of a true variant could prevent the successful diagnosis of a patient's disorder. Do you take any responsibility for patient outcomes influenced in part by AutoFilter?
 Of course we take no responsibilty for any outcomes that might result, directly or indirectly, from the use of AutoFilter. But in practice,
-removing false positives from variant call-set is a necessary evil for which machine-learning algorithms currently represent the best solution.<br>
+removing false positives from a variant call-set is a necessary evil for which machine-learning algorithms currently represent the best solution.<br>
 
 AutoFilter's summary file will give a great idea on how many true variants AutoFilter is throwing away at any threshold. From here you can 
 choose the calling threshold that achieves the sensitivity/specificity tradeoff most suitable to your needs. 
