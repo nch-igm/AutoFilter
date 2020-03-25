@@ -114,11 +114,10 @@ In the output, low-confidence variants will be marked __"LowQual"__ in the FILTE
 ## Motivation
 AutoFilter is a tool to automatically build false-positive filters for germline VCFs.
 AutoFilter achieves the machine-learning-based accuracy of GATK's Variant Quality Score Recalibration tool (the industry standard)
-while eliminating most of VQSR's more problematic requirements, including the need:
-1. for a very large training-set
-2. to manually set a prior probabilty for each training source
-3. to manually select VCF annotations
-4. to re-train fresh models on every batch.
+while eliminating most of VQSR's more problematic requirements, including the need for:
+1. a large training-set
+2. careful selection of which VCF annotations to use 
+3. the re-training of fresh models on every VCF to be filtered. 
 
 In short, AutoFilter helps
 institutions to build their own accurate VCF filters with minimum fuss.<br><br>
