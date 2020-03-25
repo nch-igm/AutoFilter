@@ -276,7 +276,7 @@ AutoFilter achieves solid performance even when all features are included.
 <br>
 <br>
 
-#### What version of Python is AutoFilter supposed to run on? And is this the same version required by the preprocessing script?
+#### Which version of Python is AutoFilter supposed to run on? And is this the same version required by the preprocessing script?
 AutoFilter is designed to work in Python 3.6, though it works in 2.7. The program
 hap.py _requires_ python 2.7, meaning the script preprocess.sh in Step 3 must be run in a
 python 2.7 environment. 
