@@ -139,14 +139,14 @@ __*Human reference genome file:*__ Hg37/19 or hg38. <br><br>
 __APPLICATIONS__<br>
 bedtools, hap.py, tabix and bgzip.<br><br>
 
-## Preprocessing step: summary<br>
+## Preprocessing step (autofilt_preprocess.py): summary<br>
 This step compares your query VCF to the gold-standard truth sets and identifies the true and
 false variants. 
 1. (WES only) Intersect the Genome in a Bottle bedfile with the bedfile for your capture kit.<br>
 2. Filter both VCFs by the bedfile from Step 1.<br>
 3. Compare truth and query VCFs using the program hap.py. (Requires Python 2.7)<br><br>
 
-## Training options<br>
+## Training options (autofilt_train.py) <br>
 AutoFilter will happily train "vanilla" models if provided only with input and output 
 files. However, you can achieve a high degree of model customization by passing in a json
 file. <br>
