@@ -226,7 +226,7 @@ No. Most importantly, AutoFilter labels all multi-allelic variants as PASS. Auto
 considers a variant to "multi-allelic" if it contains
 more than one allele in the ALT field OR its genotype field "X/Y" includes an integer greater than one 
 (though the second condition should imply the first). Note that these criteria also apply to 
-multi-sample variants, even if the variant has only one alternate allele in the sample being considered.<br>
+multi-sample variants, even if the variant has only one alternate allele in any given sample.<br>
 
 Variants with unconventional annotations (such as structural variants enclosed by < >) will always 
 be passed, provided they do not have a reference genotype.<br>
