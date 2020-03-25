@@ -217,7 +217,7 @@ choose the calling threshold that achieves the sensitivity/specificity tradeoff 
 <br>
 
 #### Can AutoFilter handle multi-sample VCFs?
-Sure. A multi-sample variant is flagged as PASS if it is passed in any sample.
+Sure. A multi-sample variant will be flagged as PASS if it is passed in any sample.
 <br>
 <br>
 
@@ -235,7 +235,7 @@ be passed, provided they do not have a reference genotype.<br>
 #### During preprocessing, shouldn't you be running pre.py to ensure consistent format for INDELs?
 This is indeed the best practice. However, pre.py changes the VCF annotations, meaning 
 that a model trained on pre.py-processed VCFs will only run on VCFs that have been subjected to 
-the same processing. Moreover, in our experience the improvements gained from applying pre.py are
+the same procedure. Moreover, in our experience the improvements gained from applying pre.py are
 minimal. <br>
 
 Since ease of use is one of our primary goals, it seemed better not 
@@ -287,6 +287,7 @@ autofilt_preprocess.py, as shown below:
 
 ```python
 ## autofilt_preprocess.py
+...
 with open(scriptfile_preprocess,'w') as fx:
     fx.write("#!/bin/bash\n")
     fx.write("#$ -pe smp 8\n")
