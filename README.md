@@ -225,10 +225,10 @@ Sure. A multi-sample variant will be flagged as PASS if it is passed in any samp
 No. Most importantly, AutoFilter labels all multi-allelic variants as PASS. AutoFilter 
 considers a variant to "multi-allelic" if it contains
 more than one allele in the ALT field OR its genotype field "X/Y" includes an integer greater than one 
-(though the second condition should imply the first). Note these criteria also apply to 
-multi-sample variants, even if the variant has only one alternate allele in the given sample.<br>
+(though the second condition should imply the first). Note that these criteria also apply to 
+multi-sample variants, even if the variant has only one alternate allele in the sample being considered.<br>
 
-Variants with unconventeional annotations (such as structural variants enclosed by < >) will always 
+Variants with unconventional annotations (such as structural variants enclosed by < >) will always 
 be passed, provided they do not have a reference genotype.<br>
 <br>
 
@@ -254,7 +254,7 @@ a consistent order.
 
 <br>
 
-#### When building custom models, do I have to include entries for all four types (SNP het, SNP hom, INDEL het, INDEL hom)?
+#### When building custom models, do I have to include entries for all sixteen types (SNP het, SNP hom, I1_5_het, ..., MNP_hom)?
 Nope!
 <br>
 
@@ -283,7 +283,7 @@ python 2.7 environment.
 
 We recommend the use of a version-flexible distribution of Python such as Anaconda. 
 You can seamlessly add your package-loading commands to the pre-processing script-writer
-autofilt_preprocess.py, as shown below:
+autofilt_preprocess.py as shown below:
 
 ```python
 ## autofilt_preprocess.py
