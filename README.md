@@ -175,8 +175,8 @@ AutoFilter outputs a __model performance file__ to the path traindir/allmod_summ
 are sub-categorized by insertion/deletion and length. <br>
 
 AutoFilter builds a separate model for each variant-type/zygosity combination. 
-Each model scores its applicable variants in the range \[0,1\], representing the level of confidence 
-in the variant's being real; during training. Model performance is
+Each model scores its applicable variants in the range \[0,1\], with the score representing the level of confidence 
+in the variant's being real. During training the model performance is
 validated on a held-out set at calling thresholds of 0.1, 0.2, ..., 0.9. <br>
 
 The model performance file shows performance at different threshholds. These
