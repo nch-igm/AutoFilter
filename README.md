@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-HEY
-=======
+
 # AutoFilter
 * * *
 
@@ -306,12 +304,3 @@ There are many tools
 (MuTect, VarScan) specifically designed to address this difficult problem. 
 
 
-
-
-
-
-
-
-
-
->>>>>>> ea6a1d8f49e57474651e8b6198feb5d6bba7b30f
