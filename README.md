@@ -179,7 +179,7 @@ Each model scores its applicable variants in the range \[0,1\], with the score r
 in the variant's being real. During training the model performance is
 validated on a held-out set at calling thresholds of 0.1, 0.2, ..., 0.9. <br>
 
-The model performance file shows performance at different threshholds. These
+The model performance file shows the number of TP, FP... at different threshholds. These
 thresholds are required inputs when applying the models, allowing the user
 to intelligently take control over the tradeoff of sensitivity/specificity.<br>
 
