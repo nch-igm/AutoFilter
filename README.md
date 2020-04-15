@@ -13,7 +13,7 @@ AutoFilter is a pipeline for training VCF germline filters on gold-standard
 
 <br>
 
-## Machine-learning VCF filters in four easy steps. 
+## Machine-learning-trained VCF filters in four easy steps. 
 
 ### Step #1 - Record application paths
 
